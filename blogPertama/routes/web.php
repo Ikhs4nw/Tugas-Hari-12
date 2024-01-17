@@ -27,4 +27,4 @@ Route::get('register', [AuthController::class, 'register']);
 
 Route::get('welcome', [AuthController::class, 'welcome']);
 
-Route::post('register/proses', [AuthController::class, 'postData']);
+Route::post('/welcome', [AuthController::class, 'postData']);

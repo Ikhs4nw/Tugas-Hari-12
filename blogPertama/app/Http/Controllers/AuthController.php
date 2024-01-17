@@ -9,14 +9,14 @@ class AuthController extends Controller
     public function register()
     {
         return view('register', [
-            "title" => "Register"
+            'title' => 'Register'
         ]);
     }
 
     public function welcome()
     {
         return view('welcome', [
-            "title" => "Welcome"
+            'title' => 'Welcome'
         ]);
     }
 
@@ -30,8 +30,7 @@ class AuthController extends Controller
             'bahasa' => $request->input('Bahasa'),
             'bio' => $request->input('bio')
         ];
-        return view('welcome', ['data' => $data], [
-            "title" => "Register"
-        ]);
+
+        return view('welcome', ['data' => $data], ['title' => 'Welcome']);
     }
 }
